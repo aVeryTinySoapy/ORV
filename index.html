@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omniscient Reader</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav_container">
+    <!-- Logo + Hamburger Icon -->
+    <div class="logo_hamburger">
+      <div class="logo">
+        <img src="./img/biyoo.jpg" alt="biyoo" />
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+
+    <!-- Menu -->
+    <div class="main_menu" id="main_menu">
+      <ul class="nav_bar">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="cover">
+  <img src="img/bg1.png" alt="Cover" />
+  <div class="caption">
+    <div class="caption_title">For You</div>
+    <div class="caption_description">"this story, is just for that one reader."</div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h3>About Us</h3>
+  <p><em>Omniscient Reader's Viewpoint</em></p>
+  <p>“Every story has a value. It is a story that is interesting to some people and salvation for others.”</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery">
+  <img src="img/1.jpg" alt="">
+  <img src="img/2.jpg" alt="">
+  <img src="img/3.jpg" alt="">
+  <img src="img/4.jpg" alt="">
+  <img src="img/5.jpg" alt="">
+  <img src="img/6-2.jpg" alt="">
+  <img src="img/7.jpg" alt="">
+  <img src="img/8.jpg" alt="">
+  <img src="img/9.jpg" alt="">
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+  <p>Made with ❤️ by a fan of ORV</p>
+</footer>
+
+<!-- JS -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("main_menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
